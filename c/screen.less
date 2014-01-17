@@ -1,6 +1,19 @@
 @import url("http://fonts.googleapis.com/css?family=Droid+Sans+Mono:400");
 @import url("http://fonts.googleapis.com/css?family=Carrois+Gothic:400");
-@import url("http://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+@font-face {
+  font-family: 'CMU Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('CMU Serif'), url(font/cmunrm.otf);
+}
+
+@font-face {
+  font-family: 'CMU Serif Extra';
+  font-style: bold;
+  font-weight: 400;
+  src: local('CMU Serif Extra'), url(font/cmunrb.otf);
+}
 
 @import "bootstrap.less";
 
@@ -15,6 +28,7 @@
 body {
     #gradient .vertical-three-colors(#ddd, #fff, 50%, #fff);
     margin: 0;
+    font-size: 20pt;
 }
 
 #header {
@@ -62,15 +76,17 @@ div.container {
 }
 
 ul.nav {
-    margin: -2em -3em 1em -3em;
-    padding: 0;
+    margin: -2.5em -3.75em 1em -3.75em;
+    padding: 0.2em 0;
+    font-family: "CMU Serif Extra", serif;
+    font-size: 16pt;
     text-align: center;
     #gradient .vertical-three-colors(#333, #444, 90%, #222);
 
     li {
         display: inline;
         font-weight: bold;
-        padding: 0.3em;
+        padding: 0.1em 0.3em;
 
         &.active {
             background: rgba(255, 255, 255, 0.3);
@@ -105,6 +121,8 @@ ul.nav {
 }
 
 .hero-unit {
+    font-size: 1.0em;
+
     .button-group {
         text-align: center;
     }
@@ -137,15 +155,6 @@ div.row {
     padding-top: 3em;
 }
 
-div.clearfix {
-    p {
-        font-size: @fontSizeLarge;
-    }
-
-    ul {
-        font-size: @fontSizeLarge;
-    }
-}
 
 img.right {
     float: right;
@@ -234,6 +243,7 @@ table.schedule {
     }
 }
 
-#body p {
+#body p, #body li {
     line-height: 1.5em;
+    font-size: 20pt;
 }

@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     jekyll: {
       compile: {
         src: ".",
-        dest: "build"
+        dest: "_site"
       }
     },
     connect: {
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         options: {
           host: "0.0.0.0",
           port: 1337,
-          base: "build"
+          base: "_site"
         }
       }
     }

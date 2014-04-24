@@ -1,0 +1,45 @@
+---
+layout: default
+title: flatMap(Oslo) Øyvind Raddum Berg
+---
+<div class="page-header">
+  <h1>Øyvind Raddum Berg</h1>
+</div>
+
+<div class="clearfix">
+  <img src="/m/speakers/berg.jpg" class="right" alt=""/>
+  <p>
+  Øyvind Raddum Berg is a developer at Penger.no, where he has had the
+  opportunity to play and work with Scala for over two years. He has a love
+  for starting new, amazing projects and discarding them two days later,
+  something which has brought him to a lot of interesting platforms and
+  languages.
+  </p>
+</div>
+
+<div class="page-header" id="talk">
+  <h1>How we ported our application from Java to Scala</h1>
+</div>
+<div class="clearfix">
+<p>
+In this talk I will tell the story about how we ported our main
+application to Scala.
+</p>
+<p>
+Initial focus will be on motivation for the team and for myself. Then we
+have a look at how my team tested the waters first, and how that testing
+developed into a multiphased porting strategy:
+<ul>
+  <li>refactor Java codebase to favor immutability and static functions</li>
+  <li>mechanically rewrite Java code to Scala</li>
+  <li>port Java collections usage to Scala collections, introducing Option when possible</li>
+  <li>restore sanity by replacing Hibernate with Scalaquery/Slick</li>
+  <li>rewire with cake pattern instead of Spring</li>
+  <li>regain control over HTTP by replacing Spring MVC with Unfiltered</li>
+</ul>
+</p>
+<p>
+By sharing some experience for each of these phases, I hope this talk can
+be useful for anyone considering doing the same.
+</p>
+</div>
